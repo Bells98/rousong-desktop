@@ -1,0 +1,403 @@
+{
+  "cell": 400,
+  "columns": 4,
+  "frames": 32,
+  "actions": {
+    "yawn": {
+      "source": "yawn-poses.png",
+      "scale": 1.0223642172523961,
+      "frames": [
+        {
+          "frame": 0,
+          "size": [
+            224,
+            320
+          ],
+          "position": [
+            88,
+            46
+          ],
+          "neutral": true
+        },
+        {
+          "frame": 1,
+          "size": [
+            221,
+            319
+          ],
+          "position": [
+            90,
+            47
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 2,
+          "size": [
+            226,
+            317
+          ],
+          "position": [
+            87,
+            49
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 3,
+          "size": [
+            224,
+            318
+          ],
+          "position": [
+            88,
+            48
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 4,
+          "size": [
+            229,
+            327
+          ],
+          "position": [
+            86,
+            39
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 5,
+          "size": [
+            226,
+            322
+          ],
+          "position": [
+            87,
+            44
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 6,
+          "size": [
+            227,
+            326
+          ],
+          "position": [
+            86,
+            40
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 7,
+          "size": [
+            222,
+            320
+          ],
+          "position": [
+            89,
+            46
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 8,
+          "size": [
+            229,
+            318
+          ],
+          "position": [
+            86,
+            48
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 9,
+          "size": [
+            231,
+            318
+          ],
+          "position": [
+            84,
+            48
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 10,
+          "size": [
+            231,
+            317
+          ],
+          "position": [
+            84,
+            49
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 11,
+          "size": [
+            222,
+            315
+          ],
+          "position": [
+            89,
+            51
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 12,
+          "size": [
+            230,
+            321
+          ],
+          "position": [
+            85,
+            45
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 13,
+          "size": [
+            229,
+            320
+          ],
+          "position": [
+            86,
+            46
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 14,
+          "size": [
+            230,
+            314
+          ],
+          "position": [
+            85,
+            52
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 15,
+          "size": [
+            227,
+            321
+          ],
+          "position": [
+            86,
+            45
+          ],
+          "neutral": true
+        }
+      ]
+    },
+    "roll": {
+      "source": "roll-poses.png",
+      "scale": 1.0491803278688525,
+      "frames": [
+        {
+          "frame": 16,
+          "size": [
+            215,
+            320
+          ],
+          "position": [
+            92,
+            46
+          ],
+          "neutral": true
+        },
+        {
+          "frame": 17,
+          "size": [
+            289,
+            236
+          ],
+          "position": [
+            56,
+            130
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 18,
+          "size": [
+            325,
+            208
+          ],
+          "position": [
+            38,
+            158
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 19,
+          "size": [
+            317,
+            213
+          ],
+          "position": [
+            42,
+            153
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 20,
+          "size": [
+            354,
+            186
+          ],
+          "position": [
+            23,
+            180
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 21,
+          "size": [
+            345,
+            227
+          ],
+          "position": [
+            28,
+            139
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 22,
+          "size": [
+            345,
+            253
+          ],
+          "position": [
+            28,
+            113
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 23,
+          "size": [
+            273,
+            271
+          ],
+          "position": [
+            64,
+            95
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 24,
+          "size": [
+            314,
+            240
+          ],
+          "position": [
+            43,
+            126
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 25,
+          "size": [
+            330,
+            220
+          ],
+          "position": [
+            35,
+            146
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 26,
+          "size": [
+            304,
+            236
+          ],
+          "position": [
+            48,
+            130
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 27,
+          "size": [
+            327,
+            171
+          ],
+          "position": [
+            36,
+            195
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 28,
+          "size": [
+            290,
+            213
+          ],
+          "position": [
+            55,
+            153
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 29,
+          "size": [
+            314,
+            298
+          ],
+          "position": [
+            43,
+            68
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 30,
+          "size": [
+            254,
+            328
+          ],
+          "position": [
+            73,
+            38
+          ],
+          "neutral": false
+        },
+        {
+          "frame": 31,
+          "size": [
+            218,
+            327
+          ],
+          "position": [
+            91,
+            39
+          ],
+          "neutral": true
+        }
+      ]
+    }
+  }
+}

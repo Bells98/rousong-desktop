@@ -1,0 +1,25 @@
+{
+  "passed": 19,
+  "checks": [
+    "DOM startup loads realistic atlas",
+    "DOM repeat care is guarded",
+    "pet does not interrupt eating",
+    "water after eating works",
+    "sleep recovers energy and stays sleeping",
+    "wake works",
+    "reload preserves care and settings",
+    "keyboard pet",
+    "drag changes position without pat",
+    "cancelled pointer cannot move or pat",
+    "lost capture is safe",
+    "size bounded to narrow and desktop stages",
+    "16 real Canvas poses do not touch canvas edge",
+    "care/stretch/play Canvas render without exceptions",
+    "DOM offline cap and floors",
+    "corrupt state loads playable defaults",
+    "corrupt state can be overwritten by new saved state",
+    "unavailable storage remains playable and shows warning",
+    "embedded JS and atlas exact match; no external dependency"
+  ],
+  "scope": "Node VM DOM harness and actual @napi-rs/canvas rasterizer; not a browser layout test"
+}

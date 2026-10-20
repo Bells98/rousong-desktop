@@ -1,0 +1,14 @@
+v0.8: contact-rhythm 2D scratching preview.
+14 logic groups and 12 production Canvas groups passed once after final integration; 572 scene samples, maximum canvas-edge alpha 0.
+Inline decoded-image loading, RAF, play/pause, half speed, replay, paw-zoom crop and reduced-motion initialization checks passed. Individually frozen decoded frames preserve the intended contact sequence.
+The prior single shared whole-body interpolation is replaced by independent near/far paw phases: hook hold, resisted short pull, pull pause, release away from the board, curved lift, and approach.
+Near/far timings differ; shoulder and elbow loading is delayed, head response is small and opposite, hip counterbalance is small, and rear feet remain planted.
+The unchanged 400px board PNG draws to canonical [120,0,280,400]. JS metadata and generated C# constants share that rectangle; WPF applies .6 scale and +8.4 y.
+The active relative-path generator is bake_scratch_contact.cjs (Node with @napi-rs/canvas, only for optional asset rebuilding). From the extracted package directory run: node source/bake_scratch_contact.cjs --out-dir motion-build, then copy motion-build/scratch-contact-atlas.png to source/assets/scratch-smooth.png and motion-build/scratch-contact-layout.json to source/assets/scratch-fullbody-layout.json. Normal Windows startup uses the included PNG and does not require Node.
+The historical v0.7 builder is retained for reproducing the older motion and must not regenerate active assets.
+Visual inspection of adjacent PNGs confirms planted near-paw tips during the hold, a short pull followed by pause, and visible alpha clearance from both sisal and wood on return. The other paw is offset in phase.
+The wrist/palm patch uses one rigid local transform on a connected source-B mesh. Candidate frames contain no flipped triangles or previously observed wrist tears.
+Naturalness limitations remain: mostly fixed toe/claw shape, no true per-toe grip or visibility exchange, visible 2D wrist/palm motion, and modest shoulder/chest loading. Geometry and pixel diagnostics do not prove natural biological motion.
+Four-image loading, shared timing, clipping, stationary-board compositing, and care/sleep/drag/random-play/save checks are recorded by test-canvas.cjs and test-logic.cjs after integration.
+Idle-to-scratch and scratch-to-idle still switch directly; continuous stand/sit transitions are not implemented.
+Full browser layout and Windows WPF compilation/runtime are not verified.

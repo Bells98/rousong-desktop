@@ -1,0 +1,2092 @@
+{
+  "version": 2,
+  "tileWidth": 400,
+  "tileHeight": 400,
+  "columns": 4,
+  "rows": 8,
+  "anchor": [
+    200,
+    366
+  ],
+  "motionBounds": {
+    "maximumDx": 16,
+    "maximumButterflyHop": 35
+  },
+  "method": "Connected-alpha component extraction, crop, and whole-pose uniform resize. Original colors retained.",
+  "neutral": {
+    "source": "atlas.png",
+    "sourceRect": [
+      0,
+      0,
+      314,
+      373
+    ],
+    "scale": 0.94,
+    "anchor": [
+      198,
+      356
+    ],
+    "renderedVisibleBounds": [
+      99,
+      53,
+      301,
+      366
+    ],
+    "renderedVisibleHeight": 313,
+    "packedPosition": [
+      14,
+      31
+    ],
+    "pixelSha256": "7d4530be6bd6c1131c8f0c0b012083dc01ea6439e0904d935bf0eccbe5ff3467"
+  },
+  "actions": {
+    "stretch": {
+      "source": {
+        "file": "generated_images/exec-8edb3008-416f-42d7-9b25-67a0d8931a09.png",
+        "sha256": "f6b53064076f68be9cc8d125c1d836b50e3f55ae64a1940abb17a0a92398dffe",
+        "size": [
+          1774,
+          887
+        ],
+        "transparentPixels": 921503,
+        "partialAlphaPixels": 651313,
+        "opaquePixels": 722
+      },
+      "scale": 0.7794432548179872,
+      "referenceScale": 0.8087855297157622,
+      "scaleCappedForCanvas": true,
+      "sourceComponents": [
+        {
+          "index": 0,
+          "sourceBounds": [
+            94,
+            31,
+            369,
+            423
+          ],
+          "sourceCoreBounds": [
+            11,
+            2,
+            270,
+            389
+          ],
+          "islandLabel": 3,
+          "visiblePixelCount": 72801,
+          "redEdgePixels": 1548,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 1,
+          "sourceBounds": [
+            497,
+            15,
+            830,
+            424
+          ],
+          "sourceCoreBounds": [
+            9,
+            4,
+            315,
+            406
+          ],
+          "islandLabel": 2,
+          "visiblePixelCount": 78889,
+          "redEdgePixels": 1422,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 2,
+          "sourceBounds": [
+            920,
+            33,
+            1302,
+            435
+          ],
+          "sourceCoreBounds": [
+            6,
+            3,
+            368,
+            392
+          ],
+          "islandLabel": 4,
+          "visiblePixelCount": 84790,
+          "redEdgePixels": 953,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 3,
+          "sourceBounds": [
+            1354,
+            17,
+            1774,
+            437
+          ],
+          "sourceCoreBounds": [
+            9,
+            1,
+            410,
+            409
+          ],
+          "islandLabel": 1,
+          "visiblePixelCount": 77654,
+          "redEdgePixels": 1109,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 4,
+          "sourceBounds": [
+            17,
+            452,
+            482,
+            857
+          ],
+          "sourceCoreBounds": [
+            7,
+            8,
+            456,
+            400
+          ],
+          "islandLabel": 5,
+          "visiblePixelCount": 79806,
+          "redEdgePixels": 1044,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 5,
+          "sourceBounds": [
+            499,
+            474,
+            877,
+            843
+          ],
+          "sourceCoreBounds": [
+            6,
+            2,
+            364,
+            365
+          ],
+          "islandLabel": 8,
+          "visiblePixelCount": 84823,
+          "redEdgePixels": 943,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 6,
+          "sourceBounds": [
+            904,
+            454,
+            1343,
+            851
+          ],
+          "sourceCoreBounds": [
+            9,
+            7,
+            420,
+            391
+          ],
+          "islandLabel": 6,
+          "visiblePixelCount": 93261,
+          "redEdgePixels": 1791,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 7,
+          "sourceBounds": [
+            1467,
+            467,
+            1731,
+            868
+          ],
+          "sourceCoreBounds": [
+            6,
+            5,
+            261,
+            391
+          ],
+          "islandLabel": 7,
+          "visiblePixelCount": 71344,
+          "redEdgePixels": 1406,
+          "redOpaquePixels": 0
+        }
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "tileIndex": 0,
+          "name": "neutral",
+          "source": "atlas.png",
+          "sourceBounds": [
+            0,
+            0,
+            314,
+            373
+          ],
+          "scale": 0.94,
+          "renderedBounds": [
+            99,
+            53,
+            301,
+            366
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "neutralIdentitySha256": "7d4530be6bd6c1131c8f0c0b012083dc01ea6439e0904d935bf0eccbe5ff3467"
+        },
+        {
+          "index": 1,
+          "tileIndex": 1,
+          "name": "rise",
+          "source": "generated_images/exec-8edb3008-416f-42d7-9b25-67a0d8931a09.png",
+          "sourceBounds": [
+            497,
+            15,
+            830,
+            424
+          ],
+          "sourceCoreBounds": [
+            9,
+            4,
+            315,
+            406
+          ],
+          "scale": 0.7794432548179872,
+          "packedPosition": [
+            74,
+            50
+          ],
+          "renderedBounds": [
+            81,
+            53,
+            318,
+            367
+          ],
+          "renderedFullAlphaBounds": [
+            74,
+            50,
+            334,
+            369
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 1422,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 2,
+          "tileIndex": 2,
+          "name": "reach",
+          "source": "generated_images/exec-8edb3008-416f-42d7-9b25-67a0d8931a09.png",
+          "sourceBounds": [
+            920,
+            33,
+            1302,
+            435
+          ],
+          "sourceCoreBounds": [
+            6,
+            3,
+            368,
+            392
+          ],
+          "scale": 0.7794432548179872,
+          "packedPosition": [
+            54,
+            60
+          ],
+          "renderedBounds": [
+            59,
+            62,
+            341,
+            365
+          ],
+          "renderedFullAlphaBounds": [
+            54,
+            60,
+            352,
+            373
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 953,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 3,
+          "tileIndex": 3,
+          "name": "press",
+          "source": "generated_images/exec-8edb3008-416f-42d7-9b25-67a0d8931a09.png",
+          "sourceBounds": [
+            1354,
+            17,
+            1774,
+            437
+          ],
+          "sourceCoreBounds": [
+            9,
+            1,
+            410,
+            409
+          ],
+          "scale": 0.7794432548179872,
+          "packedPosition": [
+            37,
+            47
+          ],
+          "renderedBounds": [
+            44,
+            48,
+            357,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            37,
+            47,
+            364,
+            374
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 1109,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 4,
+          "tileIndex": 4,
+          "name": "long-stretch",
+          "source": "generated_images/exec-8edb3008-416f-42d7-9b25-67a0d8931a09.png",
+          "sourceBounds": [
+            17,
+            452,
+            482,
+            857
+          ],
+          "sourceCoreBounds": [
+            7,
+            8,
+            456,
+            400
+          ],
+          "scale": 0.7794432548179872,
+          "packedPosition": [
+            20,
+            54
+          ],
+          "renderedBounds": [
+            26,
+            60,
+            375,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            20,
+            54,
+            382,
+            370
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 1044,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 5,
+          "tileIndex": 5,
+          "name": "release",
+          "source": "generated_images/exec-8edb3008-416f-42d7-9b25-67a0d8931a09.png",
+          "sourceBounds": [
+            499,
+            474,
+            877,
+            843
+          ],
+          "sourceCoreBounds": [
+            6,
+            2,
+            364,
+            365
+          ],
+          "scale": 0.7794432548179872,
+          "packedPosition": [
+            56,
+            82
+          ],
+          "renderedBounds": [
+            61,
+            84,
+            340,
+            367
+          ],
+          "renderedFullAlphaBounds": [
+            56,
+            82,
+            351,
+            370
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 943,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 6,
+          "tileIndex": 6,
+          "name": "sit",
+          "source": "generated_images/exec-8edb3008-416f-42d7-9b25-67a0d8931a09.png",
+          "sourceBounds": [
+            904,
+            454,
+            1343,
+            851
+          ],
+          "sourceCoreBounds": [
+            9,
+            7,
+            420,
+            391
+          ],
+          "scale": 0.7794432548179872,
+          "packedPosition": [
+            33,
+            61
+          ],
+          "renderedBounds": [
+            40,
+            67,
+            360,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            33,
+            61,
+            375,
+            370
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 1791,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 7,
+          "tileIndex": 7,
+          "name": "neutral",
+          "source": "atlas.png",
+          "sourceBounds": [
+            0,
+            0,
+            314,
+            373
+          ],
+          "scale": 0.94,
+          "renderedBounds": [
+            99,
+            53,
+            301,
+            366
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "neutralIdentitySha256": "7d4530be6bd6c1131c8f0c0b012083dc01ea6439e0904d935bf0eccbe5ff3467"
+        }
+      ]
+    },
+    "butterfly": {
+      "source": {
+        "file": "generated_images/exec-4d22340a-c737-4803-a94e-a670d6142783.png",
+        "sha256": "ece544cebe30416262e2356805c369ce5c199f19ef0a7f72d7dcd38fe6b8d359",
+        "size": [
+          1774,
+          887
+        ],
+        "transparentPixels": 1012875,
+        "partialAlphaPixels": 560125,
+        "opaquePixels": 538
+      },
+      "scale": 0.7615062761506276,
+      "referenceScale": 0.9098837209302325,
+      "scaleCappedForCanvas": true,
+      "sourceComponents": [
+        {
+          "index": 0,
+          "sourceBounds": [
+            80,
+            65,
+            351,
+            421
+          ],
+          "sourceCoreBounds": [
+            6,
+            6,
+            255,
+            350
+          ],
+          "islandLabel": 3,
+          "visiblePixelCount": 63535,
+          "redEdgePixels": 847,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 1,
+          "sourceBounds": [
+            514,
+            25,
+            794,
+            420
+          ],
+          "sourceCoreBounds": [
+            5,
+            3,
+            260,
+            390
+          ],
+          "islandLabel": 2,
+          "visiblePixelCount": 69865,
+          "redEdgePixels": 1112,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 2,
+          "sourceBounds": [
+            888,
+            164,
+            1317,
+            418
+          ],
+          "sourceCoreBounds": [
+            7,
+            4,
+            414,
+            247
+          ],
+          "islandLabel": 4,
+          "visiblePixelCount": 67172,
+          "redEdgePixels": 687,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 3,
+          "sourceBounds": [
+            1336,
+            5,
+            1743,
+            436
+          ],
+          "sourceCoreBounds": [
+            3,
+            5,
+            403,
+            426
+          ],
+          "islandLabel": 1,
+          "visiblePixelCount": 70909,
+          "redEdgePixels": 817,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 4,
+          "sourceBounds": [
+            43,
+            416,
+            519,
+            842
+          ],
+          "sourceCoreBounds": [
+            4,
+            3,
+            474,
+            423
+          ],
+          "islandLabel": 5,
+          "visiblePixelCount": 77324,
+          "redEdgePixels": 1313,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 5,
+          "sourceBounds": [
+            483,
+            460,
+            920,
+            825
+          ],
+          "sourceCoreBounds": [
+            2,
+            4,
+            432,
+            363
+          ],
+          "islandLabel": 6,
+          "visiblePixelCount": 66475,
+          "redEdgePixels": 789,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 6,
+          "sourceBounds": [
+            951,
+            517,
+            1349,
+            853
+          ],
+          "sourceCoreBounds": [
+            5,
+            4,
+            382,
+            329
+          ],
+          "islandLabel": 8,
+          "visiblePixelCount": 70265,
+          "redEdgePixels": 793,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 7,
+          "sourceBounds": [
+            1438,
+            481,
+            1731,
+            856
+          ],
+          "sourceCoreBounds": [
+            9,
+            1,
+            275,
+            369
+          ],
+          "islandLabel": 7,
+          "visiblePixelCount": 69222,
+          "redEdgePixels": 1257,
+          "redOpaquePixels": 0
+        }
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "tileIndex": 8,
+          "name": "neutral",
+          "source": "atlas.png",
+          "sourceBounds": [
+            0,
+            0,
+            314,
+            373
+          ],
+          "scale": 0.94,
+          "renderedBounds": [
+            99,
+            53,
+            301,
+            366
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "neutralIdentitySha256": "7d4530be6bd6c1131c8f0c0b012083dc01ea6439e0904d935bf0eccbe5ff3467"
+        },
+        {
+          "index": 1,
+          "tileIndex": 9,
+          "name": "watch",
+          "source": "generated_images/exec-4d22340a-c737-4803-a94e-a670d6142783.png",
+          "sourceBounds": [
+            514,
+            25,
+            794,
+            420
+          ],
+          "sourceCoreBounds": [
+            5,
+            3,
+            260,
+            390
+          ],
+          "scale": 0.7615062761506276,
+          "packedPosition": [
+            99,
+            69
+          ],
+          "renderedBounds": [
+            103,
+            72,
+            297,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            99,
+            69,
+            312,
+            370
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 1112,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 2,
+          "tileIndex": 10,
+          "name": "crouch",
+          "source": "generated_images/exec-4d22340a-c737-4803-a94e-a670d6142783.png",
+          "sourceBounds": [
+            888,
+            164,
+            1317,
+            418
+          ],
+          "sourceCoreBounds": [
+            7,
+            4,
+            414,
+            247
+          ],
+          "scale": 0.7615062761506276,
+          "packedPosition": [
+            40,
+            178
+          ],
+          "renderedBounds": [
+            45,
+            181,
+            353,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            40,
+            178,
+            367,
+            371
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 687,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 3,
+          "tileIndex": 11,
+          "name": "rear",
+          "source": "generated_images/exec-4d22340a-c737-4803-a94e-a670d6142783.png",
+          "sourceBounds": [
+            1336,
+            5,
+            1743,
+            436
+          ],
+          "sourceCoreBounds": [
+            3,
+            5,
+            403,
+            426
+          ],
+          "scale": 0.7615062761506276,
+          "packedPosition": [
+            45,
+            42
+          ],
+          "renderedBounds": [
+            47,
+            46,
+            352,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            45,
+            42,
+            355,
+            370
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 817,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 4,
+          "tileIndex": 12,
+          "name": "leap",
+          "source": "generated_images/exec-4d22340a-c737-4803-a94e-a670d6142783.png",
+          "sourceBounds": [
+            43,
+            416,
+            519,
+            842
+          ],
+          "sourceCoreBounds": [
+            4,
+            3,
+            474,
+            423
+          ],
+          "scale": 0.7615062761506276,
+          "packedPosition": [
+            18,
+            44
+          ],
+          "renderedBounds": [
+            21,
+            46,
+            378,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            18,
+            44,
+            380,
+            368
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 35,
+          "redEdgePixels": 1313,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 5,
+          "tileIndex": 13,
+          "name": "reach-in-air",
+          "source": "generated_images/exec-4d22340a-c737-4803-a94e-a670d6142783.png",
+          "sourceBounds": [
+            483,
+            460,
+            920,
+            825
+          ],
+          "sourceCoreBounds": [
+            2,
+            4,
+            432,
+            363
+          ],
+          "scale": 0.7615062761506276,
+          "packedPosition": [
+            35,
+            90
+          ],
+          "renderedBounds": [
+            37,
+            93,
+            364,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            35,
+            90,
+            368,
+            368
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 35,
+          "redEdgePixels": 789,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 6,
+          "tileIndex": 14,
+          "name": "land",
+          "source": "generated_images/exec-4d22340a-c737-4803-a94e-a670d6142783.png",
+          "sourceBounds": [
+            951,
+            517,
+            1349,
+            853
+          ],
+          "sourceCoreBounds": [
+            5,
+            4,
+            382,
+            329
+          ],
+          "scale": 0.7615062761506276,
+          "packedPosition": [
+            53,
+            115
+          ],
+          "renderedBounds": [
+            57,
+            118,
+            344,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            53,
+            115,
+            356,
+            371
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 793,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 7,
+          "tileIndex": 15,
+          "name": "neutral",
+          "source": "atlas.png",
+          "sourceBounds": [
+            0,
+            0,
+            314,
+            373
+          ],
+          "scale": 0.94,
+          "renderedBounds": [
+            99,
+            53,
+            301,
+            366
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "neutralIdentitySha256": "7d4530be6bd6c1131c8f0c0b012083dc01ea6439e0904d935bf0eccbe5ff3467"
+        }
+      ]
+    },
+    "ball": {
+      "source": {
+        "file": "generated_images/exec-96bab6e8-3ce8-46cc-bfea-ff5ffb15e38c.png",
+        "sha256": "538725c78166e3c173fac4f6dc8db7ba96060f9dfb6ab164d355a581c07c44d1",
+        "size": [
+          1774,
+          887
+        ],
+        "transparentPixels": 947771,
+        "partialAlphaPixels": 625511,
+        "opaquePixels": 256
+      },
+      "scale": 0.7947598253275109,
+      "referenceScale": 0.9152046783625731,
+      "scaleCappedForCanvas": true,
+      "sourceComponents": [
+        {
+          "index": 0,
+          "sourceBounds": [
+            64,
+            69,
+            359,
+            430
+          ],
+          "sourceCoreBounds": [
+            6,
+            9,
+            291,
+            351
+          ],
+          "islandLabel": 4,
+          "visiblePixelCount": 71562,
+          "redEdgePixels": 268,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 1,
+          "sourceBounds": [
+            418,
+            30,
+            853,
+            433
+          ],
+          "sourceCoreBounds": [
+            9,
+            9,
+            431,
+            393
+          ],
+          "islandLabel": 1,
+          "visiblePixelCount": 85697,
+          "redEdgePixels": 979,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 2,
+          "sourceBounds": [
+            876,
+            67,
+            1291,
+            433
+          ],
+          "sourceCoreBounds": [
+            9,
+            8,
+            413,
+            357
+          ],
+          "islandLabel": 3,
+          "visiblePixelCount": 79907,
+          "redEdgePixels": 1104,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 3,
+          "sourceBounds": [
+            1320,
+            64,
+            1728,
+            434
+          ],
+          "sourceCoreBounds": [
+            5,
+            5,
+            403,
+            362
+          ],
+          "islandLabel": 2,
+          "visiblePixelCount": 80128,
+          "redEdgePixels": 667,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 4,
+          "sourceBounds": [
+            31,
+            453,
+            375,
+            837
+          ],
+          "sourceCoreBounds": [
+            10,
+            6,
+            341,
+            376
+          ],
+          "islandLabel": 6,
+          "visiblePixelCount": 74897,
+          "redEdgePixels": 933,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 5,
+          "sourceBounds": [
+            449,
+            467,
+            905,
+            841
+          ],
+          "sourceCoreBounds": [
+            4,
+            5,
+            454,
+            364
+          ],
+          "islandLabel": 7,
+          "visiblePixelCount": 82287,
+          "redEdgePixels": 643,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 6,
+          "sourceBounds": [
+            956,
+            453,
+            1313,
+            839
+          ],
+          "sourceCoreBounds": [
+            7,
+            3,
+            354,
+            377
+          ],
+          "islandLabel": 5,
+          "visiblePixelCount": 74394,
+          "redEdgePixels": 1051,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 7,
+          "sourceBounds": [
+            1447,
+            483,
+            1710,
+            842
+          ],
+          "sourceCoreBounds": [
+            5,
+            6,
+            260,
+            351
+          ],
+          "islandLabel": 8,
+          "visiblePixelCount": 72044,
+          "redEdgePixels": 360,
+          "redOpaquePixels": 0
+        }
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "tileIndex": 16,
+          "name": "neutral",
+          "source": "atlas.png",
+          "sourceBounds": [
+            0,
+            0,
+            314,
+            373
+          ],
+          "scale": 0.94,
+          "renderedBounds": [
+            99,
+            53,
+            301,
+            366
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "neutralIdentitySha256": "7d4530be6bd6c1131c8f0c0b012083dc01ea6439e0904d935bf0eccbe5ff3467"
+        },
+        {
+          "index": 1,
+          "tileIndex": 17,
+          "name": "look-down",
+          "source": "generated_images/exec-96bab6e8-3ce8-46cc-bfea-ff5ffb15e38c.png",
+          "sourceBounds": [
+            418,
+            30,
+            853,
+            433
+          ],
+          "sourceCoreBounds": [
+            9,
+            9,
+            431,
+            393
+          ],
+          "scale": 0.7947598253275109,
+          "packedPosition": [
+            25,
+            54
+          ],
+          "renderedBounds": [
+            32,
+            61,
+            368,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            25,
+            54,
+            371,
+            374
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 979,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 2,
+          "tileIndex": 18,
+          "name": "touch",
+          "source": "generated_images/exec-96bab6e8-3ce8-46cc-bfea-ff5ffb15e38c.png",
+          "sourceBounds": [
+            876,
+            67,
+            1291,
+            433
+          ],
+          "sourceCoreBounds": [
+            9,
+            8,
+            413,
+            357
+          ],
+          "scale": 0.7947598253275109,
+          "packedPosition": [
+            32,
+            82
+          ],
+          "renderedBounds": [
+            39,
+            88,
+            360,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            32,
+            82,
+            362,
+            373
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 1104,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 3,
+          "tileIndex": 19,
+          "name": "bat",
+          "source": "generated_images/exec-96bab6e8-3ce8-46cc-bfea-ff5ffb15e38c.png",
+          "sourceBounds": [
+            1320,
+            64,
+            1728,
+            434
+          ],
+          "sourceCoreBounds": [
+            5,
+            5,
+            403,
+            362
+          ],
+          "scale": 0.7947598253275109,
+          "packedPosition": [
+            38,
+            78
+          ],
+          "renderedBounds": [
+            42,
+            82,
+            358,
+            365
+          ],
+          "renderedFullAlphaBounds": [
+            38,
+            78,
+            362,
+            372
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 667,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 4,
+          "tileIndex": 20,
+          "name": "follow",
+          "source": "generated_images/exec-96bab6e8-3ce8-46cc-bfea-ff5ffb15e38c.png",
+          "sourceBounds": [
+            31,
+            453,
+            375,
+            837
+          ],
+          "sourceCoreBounds": [
+            10,
+            6,
+            341,
+            376
+          ],
+          "scale": 0.7947598253275109,
+          "packedPosition": [
+            61,
+            67
+          ],
+          "renderedBounds": [
+            69,
+            72,
+            332,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            61,
+            67,
+            334,
+            372
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 933,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 5,
+          "tileIndex": 21,
+          "name": "pin",
+          "source": "generated_images/exec-96bab6e8-3ce8-46cc-bfea-ff5ffb15e38c.png",
+          "sourceBounds": [
+            449,
+            467,
+            905,
+            841
+          ],
+          "sourceCoreBounds": [
+            4,
+            5,
+            454,
+            364
+          ],
+          "scale": 0.7947598253275109,
+          "packedPosition": [
+            18,
+            77
+          ],
+          "renderedBounds": [
+            21,
+            81,
+            378,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            18,
+            77,
+            380,
+            374
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 643,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 6,
+          "tileIndex": 22,
+          "name": "settle",
+          "source": "generated_images/exec-96bab6e8-3ce8-46cc-bfea-ff5ffb15e38c.png",
+          "sourceBounds": [
+            956,
+            453,
+            1313,
+            839
+          ],
+          "sourceCoreBounds": [
+            7,
+            3,
+            354,
+            377
+          ],
+          "scale": 0.7947598253275109,
+          "packedPosition": [
+            57,
+            66
+          ],
+          "renderedBounds": [
+            62,
+            69,
+            339,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            57,
+            66,
+            341,
+            373
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 1051,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 7,
+          "tileIndex": 23,
+          "name": "neutral",
+          "source": "atlas.png",
+          "sourceBounds": [
+            0,
+            0,
+            314,
+            373
+          ],
+          "scale": 0.94,
+          "renderedBounds": [
+            99,
+            53,
+            301,
+            366
+          ],
+          "groundAnchor": [
+            200,
+            366
+          ],
+          "neutralIdentitySha256": "7d4530be6bd6c1131c8f0c0b012083dc01ea6439e0904d935bf0eccbe5ff3467"
+        }
+      ]
+    },
+    "scratch": {
+      "source": {
+        "file": "rousong/desktop/source/assets/raw/exec-62ad0ef5-c7d6-4ae5-8347-b3d1b6f5b343.png",
+        "sha256": "9778aa2144d44a0b056360a7a902be9059ec91cf6cb4c2a8974b1187ceb46519",
+        "size": [
+          1774,
+          887
+        ],
+        "transparentPixels": 1057571,
+        "partialAlphaPixels": 515623,
+        "opaquePixels": 344
+      },
+      "scale": 0.8,
+      "alignment": "fixed x42; source paw base to y366",
+      "groundY": 366,
+      "referenceCatX": 42,
+      "stationaryMotion": true,
+      "sourceComponents": [
+        {
+          "index": 0,
+          "sourceBounds": [
+            90,
+            111,
+            315,
+            437
+          ],
+          "sourceCoreBounds": [
+            2,
+            2,
+            206,
+            320
+          ],
+          "islandLabel": 4,
+          "visiblePixelCount": 48783,
+          "redEdgePixels": 485,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 1,
+          "sourceBounds": [
+            467,
+            87,
+            871,
+            433
+          ],
+          "sourceCoreBounds": [
+            5,
+            4,
+            386,
+            336
+          ],
+          "islandLabel": 3,
+          "visiblePixelCount": 71601,
+          "redEdgePixels": 1042,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 2,
+          "sourceBounds": [
+            934,
+            28,
+            1290,
+            436
+          ],
+          "sourceCoreBounds": [
+            7,
+            3,
+            353,
+            405
+          ],
+          "islandLabel": 2,
+          "visiblePixelCount": 62348,
+          "redEdgePixels": 1092,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 3,
+          "sourceBounds": [
+            1387,
+            0,
+            1743,
+            436
+          ],
+          "sourceCoreBounds": [
+            5,
+            3,
+            353,
+            433
+          ],
+          "islandLabel": 1,
+          "visiblePixelCount": 66840,
+          "redEdgePixels": 1281,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 4,
+          "sourceBounds": [
+            63,
+            461,
+            421,
+            873
+          ],
+          "sourceCoreBounds": [
+            10,
+            2,
+            351,
+            409
+          ],
+          "islandLabel": 6,
+          "visiblePixelCount": 62475,
+          "redEdgePixels": 1025,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 5,
+          "sourceBounds": [
+            491,
+            434,
+            841,
+            873
+          ],
+          "sourceCoreBounds": [
+            6,
+            10,
+            343,
+            436
+          ],
+          "islandLabel": 5,
+          "visiblePixelCount": 63731,
+          "redEdgePixels": 1101,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 6,
+          "sourceBounds": [
+            913,
+            530,
+            1306,
+            871
+          ],
+          "sourceCoreBounds": [
+            5,
+            2,
+            383,
+            338
+          ],
+          "islandLabel": 7,
+          "visiblePixelCount": 67203,
+          "redEdgePixels": 556,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 7,
+          "sourceBounds": [
+            1450,
+            545,
+            1687,
+            875
+          ],
+          "sourceCoreBounds": [
+            9,
+            9,
+            221,
+            327
+          ],
+          "islandLabel": 8,
+          "visiblePixelCount": 49267,
+          "redEdgePixels": 816,
+          "redOpaquePixels": 0
+        }
+      ],
+      "sourceEdgeNote": "Source frame 3 ear tip lies close to the source top edge: alpha>16 starts at y3. Its complete extracted pixels remain inside the normalized 400x400 tile. No regeneration or repaint performed.",
+      "frames": [
+        {
+          "index": 0,
+          "tileIndex": 24,
+          "name": "neutral",
+          "source": "motions.png tile0",
+          "scale": 1,
+          "renderedBounds": [
+            99,
+            53,
+            301,
+            366
+          ],
+          "neutralIdentitySha256": "7d4530be6bd6c1131c8f0c0b012083dc01ea6439e0904d935bf0eccbe5ff3467",
+          "groundAnchor": [
+            200,
+            366
+          ]
+        },
+        {
+          "index": 1,
+          "tileIndex": 25,
+          "name": "approach",
+          "source": "rousong/desktop/source/assets/raw/exec-62ad0ef5-c7d6-4ae5-8347-b3d1b6f5b343.png",
+          "sourceBounds": [
+            467,
+            87,
+            871,
+            433
+          ],
+          "sourceCoreBounds": [
+            5,
+            4,
+            386,
+            336
+          ],
+          "scale": 0.8,
+          "packedPosition": [
+            42,
+            97
+          ],
+          "renderedBounds": [
+            46,
+            100,
+            351,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            42,
+            97,
+            365,
+            374
+          ],
+          "groundAnchor": [
+            160.4,
+            366
+          ],
+          "rearFootSourceAnchor": [
+            148.0,
+            336
+          ],
+          "forepawSourceContacts": [],
+          "forepawContacts": [],
+          "maximumHop": 0,
+          "redEdgePixels": 1042,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 2,
+          "tileIndex": 26,
+          "name": "place-paws",
+          "source": "rousong/desktop/source/assets/raw/exec-62ad0ef5-c7d6-4ae5-8347-b3d1b6f5b343.png",
+          "sourceBounds": [
+            934,
+            28,
+            1290,
+            436
+          ],
+          "sourceCoreBounds": [
+            7,
+            3,
+            353,
+            405
+          ],
+          "scale": 0.8,
+          "packedPosition": [
+            42,
+            42
+          ],
+          "renderedBounds": [
+            47,
+            44,
+            325,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            42,
+            42,
+            327,
+            368
+          ],
+          "groundAnchor": [
+            165.2,
+            366
+          ],
+          "rearFootSourceAnchor": [
+            154.0,
+            405
+          ],
+          "forepawSourceContacts": [
+            [
+              350,
+              124
+            ],
+            [
+              338,
+              172
+            ]
+          ],
+          "forepawContacts": [
+            [
+              322.0,
+              141.2
+            ],
+            [
+              312.4,
+              179.6
+            ]
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 1092,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 3,
+          "tileIndex": 27,
+          "name": "right-paw-high",
+          "source": "rousong/desktop/source/assets/raw/exec-62ad0ef5-c7d6-4ae5-8347-b3d1b6f5b343.png",
+          "sourceBounds": [
+            1387,
+            0,
+            1743,
+            436
+          ],
+          "sourceCoreBounds": [
+            5,
+            3,
+            353,
+            433
+          ],
+          "scale": 0.8,
+          "packedPosition": [
+            42,
+            19
+          ],
+          "renderedBounds": [
+            46,
+            21,
+            325,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            42,
+            19,
+            327,
+            368
+          ],
+          "groundAnchor": [
+            161.2,
+            366
+          ],
+          "rearFootSourceAnchor": [
+            149.0,
+            433
+          ],
+          "forepawSourceContacts": [
+            [
+              350,
+              61
+            ],
+            [
+              333,
+              181
+            ]
+          ],
+          "forepawContacts": [
+            [
+              322.0,
+              67.8
+            ],
+            [
+              308.4,
+              163.8
+            ]
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 1281,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 4,
+          "tileIndex": 28,
+          "name": "left-paw-high",
+          "source": "rousong/desktop/source/assets/raw/exec-62ad0ef5-c7d6-4ae5-8347-b3d1b6f5b343.png",
+          "sourceBounds": [
+            63,
+            461,
+            421,
+            873
+          ],
+          "sourceCoreBounds": [
+            10,
+            2,
+            351,
+            409
+          ],
+          "scale": 0.8,
+          "packedPosition": [
+            42,
+            38
+          ],
+          "renderedBounds": [
+            50,
+            40,
+            322,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            42,
+            38,
+            328,
+            368
+          ],
+          "groundAnchor": [
+            163.2,
+            366
+          ],
+          "rearFootSourceAnchor": [
+            151.5,
+            409
+          ],
+          "forepawSourceContacts": [
+            [
+              348,
+              43
+            ],
+            [
+              330,
+              164
+            ]
+          ],
+          "forepawContacts": [
+            [
+              320.4,
+              72.4
+            ],
+            [
+              306.0,
+              169.2
+            ]
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 1025,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 5,
+          "tileIndex": 29,
+          "name": "both-paws-up",
+          "source": "rousong/desktop/source/assets/raw/exec-62ad0ef5-c7d6-4ae5-8347-b3d1b6f5b343.png",
+          "sourceBounds": [
+            491,
+            434,
+            841,
+            873
+          ],
+          "sourceCoreBounds": [
+            6,
+            10,
+            343,
+            436
+          ],
+          "scale": 0.8,
+          "packedPosition": [
+            42,
+            17
+          ],
+          "renderedBounds": [
+            47,
+            25,
+            316,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            42,
+            17,
+            322,
+            368
+          ],
+          "groundAnchor": [
+            166.0,
+            366
+          ],
+          "rearFootSourceAnchor": [
+            155.0,
+            436
+          ],
+          "forepawSourceContacts": [
+            [
+              313,
+              32
+            ],
+            [
+              339,
+              49
+            ]
+          ],
+          "forepawContacts": [
+            [
+              292.4,
+              42.6
+            ],
+            [
+              313.2,
+              56.2
+            ]
+          ],
+          "maximumHop": 0,
+          "redEdgePixels": 1101,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 6,
+          "tileIndex": 30,
+          "name": "release",
+          "source": "rousong/desktop/source/assets/raw/exec-62ad0ef5-c7d6-4ae5-8347-b3d1b6f5b343.png",
+          "sourceBounds": [
+            913,
+            530,
+            1306,
+            871
+          ],
+          "sourceCoreBounds": [
+            5,
+            2,
+            383,
+            338
+          ],
+          "scale": 0.8,
+          "packedPosition": [
+            42,
+            96
+          ],
+          "renderedBounds": [
+            46,
+            98,
+            348,
+            366
+          ],
+          "renderedFullAlphaBounds": [
+            42,
+            96,
+            356,
+            369
+          ],
+          "groundAnchor": [
+            156.4,
+            366
+          ],
+          "rearFootSourceAnchor": [
+            143.0,
+            338
+          ],
+          "forepawSourceContacts": [],
+          "forepawContacts": [],
+          "maximumHop": 0,
+          "redEdgePixels": 556,
+          "redOpaquePixels": 0
+        },
+        {
+          "index": 7,
+          "tileIndex": 31,
+          "name": "neutral",
+          "source": "motions.png tile0",
+          "scale": 1,
+          "renderedBounds": [
+            99,
+            53,
+            301,
+            366
+          ],
+          "neutralIdentitySha256": "7d4530be6bd6c1131c8f0c0b012083dc01ea6439e0904d935bf0eccbe5ff3467",
+          "groundAnchor": [
+            200,
+            366
+          ]
+        }
+      ]
+    }
+  },
+  "output": {
+    "size": [
+      1600,
+      3200
+    ],
+    "sha256": "bde5c12942db1518fb573f212bd613b5669fb6371a9a5286c3b32979012d623f"
+  },
+  "scratchBoard": {
+    "source": "rousong/desktop/source/assets/raw/exec-4db9c19d-a90f-44d9-9984-b9b8c69cfe51.png",
+    "sourceSha256": "88c8a11bfa3463e9b143b4bc12c7bf3898785090c2423baf18267a3d0c8889bb",
+    "sourceSize": [
+      1133,
+      1388
+    ],
+    "cropBounds": [
+      264,
+      21,
+      870,
+      1373
+    ],
+    "sourceCoreBounds": [
+      268,
+      25,
+      866,
+      1369
+    ],
+    "scale": 0.25148809523809523,
+    "packedPosition": [
+      238,
+      27
+    ],
+    "renderedBounds": [
+      239,
+      28,
+      389,
+      366
+    ],
+    "renderedFullAlphaBounds": [
+      238,
+      27,
+      390,
+      367
+    ],
+    "sisalFaceX": [
+      286,
+      335
+    ],
+    "woodLeftFrameX": 282,
+    "groundY": 366,
+    "renderLayer": "behind cat",
+    "output": "scratch-board.png",
+    "outputSha256": "472d673da12e7bfeb08c44fe373af0f66f48000579302d38f5710319bc4b2ff5"
+  },
+  "preservedPrefix": {
+    "tileCount": 24,
+    "size": [
+      1600,
+      2400
+    ],
+    "pixelSha256": "a4322cd56d9f3a976be4bfdf15c2dec72d4140905463e014e70d94f43b206bd5"
+  }
+}
