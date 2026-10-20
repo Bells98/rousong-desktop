@@ -1,0 +1,19 @@
+{
+  "name": "rousong-desktop",
+  "version": "0.9.0",
+  "private": true,
+  "description": "Rousong the tabby cat: offline Windows desktop companion and browser preview",
+  "scripts": {
+    "test": "npm run build:preview && npm run test:logic && npm run test:canvas",
+    "test:logic": "node source/test-logic.cjs",
+    "test:canvas": "node source/test-canvas.cjs",
+    "build:motion": "python source/build-motion-data.py",
+    "build:preview": "python source/build-preview.py"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "0.1.100"
+  }
+}

@@ -5,12 +5,15 @@ const {motionData,motionDuration,playScene}=require('./preview.js');
 const hash=buffer=>crypto.createHash('sha256').update(buffer).digest('hex');
 const checks=[];async function check(name,fn){await fn();checks.push(name)}
 (async()=>{
- const html=fs.readFileSync(path.join(__dirname,'../Rousong-Preview.html'),'utf8');
+ const sourceHtml=fs.readFileSync(path.join(__dirname,'../Rousong-Preview.html'),'utf8');
+ assert.equal((sourceHtml.match(/<script src="source\/preview\.js"><\/script>/g)||[]).length,1,'source preview loads the production script once');
+ const html=fs.readFileSync(path.join(__dirname,'../dist/Rousong-Preview.html'),'utf8');
  const js=html.match(/<script>([\s\S]*?)<\/script>/)[1];
  assert.equal(js,fs.readFileSync(path.join(__dirname,'preview.js'),'utf8'));
- assert.equal(html,fs.readFileSync(path.join(__dirname,'../../Rousong-Preview.html'),'utf8'));
  const assetFiles={spriteAsset:'atlas.png',motionsAsset:'motions.png',scratchBoardAsset:'scratch-board.png',scratchSmoothAsset:'scratch-smooth.png',relaxAsset:'relax.png'},assetIds=Object.keys(assetFiles);
  for(const [id,file] of Object.entries(assetFiles)){
+  const sourceTags=[...sourceHtml.matchAll(new RegExp('<img[^>]*id="'+id+'"[^>]*>','g'))];assert.equal(sourceTags.length,1,'one source image for '+id);
+  assert.equal(sourceTags[0][0].match(/src="([^"]+)"/)?.[1],'source/assets/'+file,'source image uses its repository path: '+id);
   const bytes=fs.readFileSync(path.join(__dirname,'assets',file));
   const tag=html.match(new RegExp('<img[^>]*id="'+id+'"[^>]*>'))?.[0];assert(tag,'missing '+id);
   const src=tag.match(/src="data:image\/[a-z]+;base64,([^"]+)"/)?.[1];assert(src,'image must be self-contained: '+id);assert.deepEqual(Buffer.from(src,'base64'),bytes,'embedded '+id+' is current');
@@ -129,7 +132,7 @@ const checks=[];async function check(name,fn){await fn();checks.push(name)}
  });
  const renderedPoseCount=Object.values(firstPoseTimes).reduce((total,frames)=>total+frames.length,0),sheet=createCanvas(1600,Math.ceil(renderedPoseCount/4)*440),g=sheet.getContext('2d');let n=0;
  for(const a of Object.keys(motionData))for(const [tile,t] of firstPoseTimes[a]){const x=n%4*400,y=Math.floor(n/4)*440;g.fillStyle='#f8f4ea';g.fillRect(x,y,400,440);render(a,t);g.drawImage(canvas,x,y+40);g.fillStyle='#6b5234';g.font='17px sans-serif';g.fillText(a+' / '+(a==='scratch'?'body '+tile:'pose '+tile)+' / '+t+'s',x+15,y+25);n++}
- const out=path.resolve(__dirname,'../../qa');fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'motion-production-64-frames.png'),sheet.toBuffer('image/png'));
- fs.writeFileSync(path.join(__dirname,'canvas-results.json'),JSON.stringify({passed:checks,renderedPoses:renderedPoseCount,relaxAtlasFrames:32,continuousScratchFrames:120,sceneTransitionSamples:sceneSampleCount,maxEdgeAlpha,tileBounds,relaxTileBounds,loopSeamDifference,maxAdjacentLoopDifference,loopPixelChanges,limitations:'Production draw() is rendered with real Canvas pixels and a stub DOM. Checks cover slicing, timing, composition, clipping and interactions; frame count and pixel differences do not establish naturalness. Browser layout and Windows WPF runtime are not covered.'},null,2));
+ const out=path.resolve(__dirname,'../qa');fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'motion-production-64-frames.png'),sheet.toBuffer('image/png'));
+ fs.writeFileSync(path.join(out,'canvas-results.json'),JSON.stringify({passed:checks,renderedPoses:renderedPoseCount,relaxAtlasFrames:32,continuousScratchFrames:120,sceneTransitionSamples:sceneSampleCount,maxEdgeAlpha,tileBounds,relaxTileBounds,loopSeamDifference,maxAdjacentLoopDifference,loopPixelChanges,limitations:'Production draw() is rendered with real Canvas pixels and a stub DOM. Checks cover slicing, timing, composition, clipping and interactions; frame count and pixel differences do not establish naturalness. Browser layout and Windows WPF runtime are not covered.'},null,2));
  console.log('PASS Canvas',checks.length,{sceneSampleCount,maxEdgeAlpha},checks);
 })().catch(e=>{console.error(e);process.exitCode=1});

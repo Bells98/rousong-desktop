@@ -3,7 +3,7 @@ from pathlib import Path
 import json
 
 root = Path(__file__).resolve().parent
-data = json.loads((root / 'motion-data.json').read_text())
+data = json.loads((root / 'motion-data.json').read_text(encoding='utf-8'))
 js = 'const motionData = ' + json.dumps(data, separators=(',', ':')) + ';\n'
 js += '''const motionDuration = Object.fromEntries(Object.entries(motionData).map(([k,v])=>[k,v.duration]));
   function playScene(name,t){
@@ -25,7 +25,7 @@ js += '''const motionDuration = Object.fromEntries(Object.entries(motionData).ma
     return s;
   }
 '''
-(root / 'motion-web.js').write_text(js)
+(root / 'motion-web.js').write_text(js, encoding='utf-8')
 cs = '''using System;
 namespace RousongDesktop {
  public class MotionPose {
@@ -81,10 +81,10 @@ r=data['scratch']['render']
 enter=round(r['enterSeconds']*r['fps']);loop=round(r['loopSeconds']*r['fps']);until=round(r['loopUntil']*r['fps'])
 selection=f"int tick=(int)Math.Floor(t*{r['fps']}+1e-7);\n    p.UseScratch=true;p.ScratchFrame=tick<{enter}?tick:tick<{until}?{enter}+(tick-{enter})%{loop}:{enter+loop}+Math.Min({r['frames']-enter-loop-1},tick-{until});"
 cs=cs.replace('__SCRATCH_SAMPLING__',selection)
-(root / 'MotionData.cs').write_text(cs)
+(root / 'MotionData.cs').write_text(cs, encoding='utf-8')
 preview=root / 'preview.js'
-text=preview.read_text()
+text=preview.read_text(encoding='utf-8')
 start=text.index('  const motionData = ')
 end=text.index('  // Source rectangles',start)
-preview.write_text(text[:start]+'  '+js+'\n'+text[end:])
+preview.write_text(text[:start]+'  '+js+'\n'+text[end:], encoding='utf-8')
 print('Generated matching web and desktop motion data.')

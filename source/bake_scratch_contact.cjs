@@ -12,7 +12,7 @@ const fs=require('fs'),path=require('path'),crypto=require('crypto');
 const {createCanvas,loadImage,ImageData}=require('@napi-rs/canvas');
 const ASSETS=path.join(__dirname,'assets'),C=400,CELL=320,COLUMNS=6;
 const flag=process.argv.indexOf('--out-dir');
-const OUT=flag>=0?path.resolve(process.argv[flag+1]):path.resolve(__dirname,'../../qa/scratch-contact-motion');
+const OUT=flag>=0?path.resolve(process.argv[flag+1]):path.resolve(__dirname,'../qa/scratch-contact-motion');
 fs.mkdirSync(OUT,{recursive:true});fs.mkdirSync(path.join(OUT,'frames'),{recursive:true});
 const BOARD={x:120,y:0,width:280,height:400,sisalLeft:320.2,woodLeft:317.4};
 const rows=[

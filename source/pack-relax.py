@@ -7,7 +7,7 @@ from scipy import ndimage
 
 ROOT=Path(__file__).resolve().parent
 ASSETS=ROOT/'assets'
-QA=ROOT.parent.parent/'qa'
+QA=ROOT.parent/'qa'
 CELL=400
 
 def poses(path):
@@ -40,10 +40,11 @@ def poses(path):
     return out
 
 def main():
+    QA.mkdir(parents=True,exist_ok=True)
     manifest={'cell':400,'columns':4,'frames':32,'actions':{}}
     sheet=Image.new('RGBA',(1600,3200))
     neutral=Image.open(ASSETS/'motions.png').crop((0,0,400,400))
-    raw=json.loads((ROOT/'relax-prompts.json').read_text())
+    raw=json.loads((ROOT/'relax-prompts.json').read_text(encoding='utf-8'))
     for name,offset in [('yawn',0),('roll',16)]:
         source=ASSETS/'raw'/raw[name]['file']
         images=poses(source)
@@ -65,7 +66,7 @@ def main():
     sheet.save(staged,optimize=True)
     with Image.open(staged) as check:check.load()
     staged.replace(ASSETS/'relax.png')
-    (ASSETS/'relax-layout.json').write_text(json.dumps(manifest,indent=2))
+    (ASSETS/'relax-layout.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
     # A downscaled overview for visual QA, not a separate user deliverable.
     contact=Image.new('RGB',(1000,1000),'#eee8de')
     d=ImageDraw.Draw(contact)

@@ -1,0 +1,4 @@
+# Optional asset rebuilding only. Running the cat and timing/preview builds do not need these.
+Pillow==12.3.0
+numpy==2.3.5
+scipy==1.17.0
