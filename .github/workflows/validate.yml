@@ -1,0 +1,78 @@
+name: Validate Rousong
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    name: Preview logic and Canvas
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - name: Check generated shared timing
+        run: |
+          python source/build-motion-data.py
+          git diff --exit-code -- source/MotionData.cs source/motion-web.js source/preview.js
+      - run: npm test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: preview-checks
+          path: |
+            qa/
+            dist/Rousong-Preview.html
+          if-no-files-found: ignore
+
+  windows:
+    name: Windows compile and WPF self-test
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build standalone browser preview
+        run: python source/build-preview.py
+      - name: Compile and render self-test snapshots
+        shell: cmd
+        run: call Start-Rousong.cmd --self-test
+      - name: Keep Windows test evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: windows-self-test
+          path: |
+            build.log
+            TestResults/
+          if-no-files-found: warn
+      - name: Prepare development build
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Path dist/Rousong-Desktop-v0.9 -Force | Out-Null
+          Copy-Item Rousong.exe,Start-Rousong.cmd,Rousong-Preview.html,README.md,Windows-Update-Notes.txt,使用说明.txt -Destination dist/Rousong-Desktop-v0.9
+          New-Item -ItemType Directory -Path dist/Rousong-Desktop-v0.9/standalone -Force | Out-Null
+          Copy-Item dist/Rousong-Preview.html -Destination dist/Rousong-Desktop-v0.9/standalone/Rousong-Preview.html
+          Copy-Item package.json,package-lock.json,requirements-assets.txt -Destination dist/Rousong-Desktop-v0.9
+          Copy-Item source -Destination dist/Rousong-Desktop-v0.9 -Recurse
+          Copy-Item docs -Destination dist/Rousong-Desktop-v0.9 -Recurse
+      - name: Keep unsigned development build
+        uses: actions/upload-artifact@v4
+        with:
+          name: Rousong-Desktop-v0.9-dev
+          path: dist/Rousong-Desktop-v0.9/
+          if-no-files-found: error

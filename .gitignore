@@ -1,0 +1,14 @@
+node_modules/
+__pycache__/
+.venv/
+qa/
+source/qa/
+Data/
+TestResults/
+dist/
+*.exe
+build.log
+*.pyc
+*.tmp
+*.bak
+.DS_Store
